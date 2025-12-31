@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, MotionValue } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Download } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { HERO } from '@/config/app.config';
 
@@ -49,7 +49,6 @@ export default function Hero({ opacity, scale, setCursorVariant }: HeroProps) {
     setBlobs(generated);
   }, []);
 
-  //To Prevent hydration mismatch
   if (!blobs.length) return null;
 
   return (
@@ -100,7 +99,9 @@ export default function Hero({ opacity, scale, setCursorVariant }: HeroProps) {
             {HERO.subtitle}
           </p>
 
-          <div className="flex justify-center gap-4 mb-12">
+
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+
             <motion.a
               href={HERO.cta.primary.href}
               onMouseEnter={() => setCursorVariant('hover')}
@@ -112,6 +113,7 @@ export default function Hero({ opacity, scale, setCursorVariant }: HeroProps) {
               {HERO.cta.primary.label}
             </motion.a>
 
+
             <motion.a
               href={HERO.cta.secondary.href}
               onMouseEnter={() => setCursorVariant('hover')}
@@ -121,6 +123,19 @@ export default function Hero({ opacity, scale, setCursorVariant }: HeroProps) {
               className="px-8 py-3 border-2 border-purple-500 rounded-full font-semibold hover:bg-purple-500/10 transition-colors"
             >
               {HERO.cta.secondary.label}
+            </motion.a>
+
+            <motion.a
+              href="/Purnima_Katiyar_Resume.pdf"
+              download
+              onMouseEnter={() => setCursorVariant('hover')}
+              onMouseLeave={() => setCursorVariant('default')}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-3 flex items-center gap-2 border border-pink-400/40 rounded-full font-semibold text-pink-300 hover:bg-pink-400/10 transition-colors"
+            >
+              <Download size={18} />
+               Resume
             </motion.a>
           </div>
 
