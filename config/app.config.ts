@@ -108,8 +108,44 @@ export const PROJECTS = {
       description:
         "Full-stack event management system with role based access along with event management features.",
       tech: ["Python", "Flask", "SQLite", "Angular", "NgPrime"],
-      image: "📊",
-      link: "#",
+      image: "🎟️",
+      link: "https://github.com/purnimakatiyar/Bookmyevent-v3",
+    },
+    {
+      title: "ATM System",
+      description:
+        "CLI-based ATM simulation supporting core banking operations with clean MVC architecture.",
+      tech: ["Python", "SQLite", "MVC"],
+      image: "🏦",
+      link: "https://github.com/purnimakatiyar/API-ATM",
+    },
+    {
+      title: "Ace Learntech",
+      description: "Online learning platform built with React.",
+      tech: ["React", "JavaScript"],
+      image: "🎓",
+      link: "https://acelearntech.netlify.app/",
+    },
+    {
+      title: "Agrotech Assistant",
+      description: "Agriculture assistant system for farmers.",
+      tech: ["Django", "Bootstrap"],
+      image: "🌱",
+      link: "https://github.com/purnimakatiyar/AgroTech-Assistant",
+    },
+    {
+      title: "Electronic Gadget Website",
+      description: "Static electronics showcase website.",
+      tech: ["HTML", "CSS"],
+      image: "📱",
+      link: "https://gallant-payne-e90c2c.netlify.app",
+    },
+    {
+      title: "Realtime Chat App",
+      description: "Realtime chat using sockets.",
+      tech: ["Node.js", "Express"],
+      image: "💬",
+      link: "https://github.com/purnimakatiyar/realtimechat",
     },
   ],
 
