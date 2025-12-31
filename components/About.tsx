@@ -28,23 +28,22 @@ export default function About() {
               transition={{ duration: 0.6 }}
               className="relative w-full max-w-sm mx-auto aspect-square rounded-3xl overflow-hidden h-[470px]"
             >
-              {/* Glow */}
+
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 to-pink-500/30 blur-2xl" />
 
-              {/* Image */}
+
               <Image
-                src="/mypic.jpg" // 👈 replace with your image path
+                src="/mypic.jpg"
                 alt="Purnima Katiyar"
                 fill
                 className="object-cover rounded-3xl relative z-10"
                 priority
               />
 
-              {/* Border */}
+
               <div className="absolute inset-0 rounded-3xl border border-purple-500/30 z-20" />
             </motion.div>
 
-            {/* ================= TEXT SECTION (RIGHT) ================= */}
             <div className="space-y-6">
               {ABOUT.paragraphs.map((text, index) => (
                 <p

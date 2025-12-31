@@ -113,7 +113,7 @@ export default function Hero({ opacity, scale, setCursorVariant }: HeroProps) {
               {HERO.cta.primary.label}
             </motion.a>
 
-            {/* Secondary CTA */}
+
             <motion.a
               href={HERO.cta.secondary.href}
               onMouseEnter={() => setCursorVariant('hover')}
