@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { ABOUT } from '@/config/app.config';
 
 export default function About() {
@@ -13,21 +14,37 @@ export default function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-        
+          {/* Heading */}
           <h2 className="text-5xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             {ABOUT.heading}
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* ================= PHOTO SECTION (LEFT) ================= */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
+              initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="w-full aspect-square bg-gradient-to-br from-purple-500 to-pink-500 rounded-3xl flex items-center justify-center text-9xl"
+              transition={{ duration: 0.6 }}
+              className="relative w-full max-w-sm mx-auto aspect-square rounded-3xl overflow-hidden h-[470px]"
             >
-              {ABOUT.emoji}
+              {/* Glow */}
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 to-pink-500/30 blur-2xl" />
+
+              {/* Image */}
+              <Image
+                src="/mypic.jpg" // 👈 replace with your image path
+                alt="Purnima Katiyar"
+                fill
+                className="object-cover rounded-3xl relative z-10"
+                priority
+              />
+
+              {/* Border */}
+              <div className="absolute inset-0 rounded-3xl border border-purple-500/30 z-20" />
             </motion.div>
 
+            {/* ================= TEXT SECTION (RIGHT) ================= */}
             <div className="space-y-6">
               {ABOUT.paragraphs.map((text, index) => (
                 <p
@@ -38,11 +55,11 @@ export default function About() {
                 </p>
               ))}
 
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 pt-4">
                 {ABOUT.highlights.map((item, index) => (
                   <div
                     key={index}
-                    className="px-6 py-3 bg-purple-500/20 rounded-full border border-purple-500/30"
+                    className="px-6 py-3 bg-purple-500/20 rounded-full border border-purple-500/30 text-sm text-purple-200"
                   >
                     {item}
                   </div>
