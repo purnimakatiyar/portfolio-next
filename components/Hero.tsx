@@ -144,6 +144,7 @@ export default function Hero({ opacity, scale, setCursorVariant }: HeroProps) {
               <motion.a
                 key={i}
                 href={social.href}
+                target='_blank'
                 onMouseEnter={() => setCursorVariant('hover')}
                 onMouseLeave={() => setCursorVariant('default')}
                 whileHover={{ scale: 1.2, rotate: 5 }}
