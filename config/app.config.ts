@@ -157,7 +157,7 @@ export const CONTACT = {
 export const NAVIGATION = {
   brand: "Purnima Katiyar",
 
-  items: ["home", "about", "skills", "projects", "contact"],
+  items: ["home", "about", "experience", "skills", "projects", "contact"],
 
   animation: {
     brand: {
@@ -176,4 +176,58 @@ export const NAVIGATION = {
       exit: { opacity: 0, height: 0 },
     },
   },
+};
+
+
+export const EXPERIENCE = {
+  heading: "Work Experience",
+
+  items: [
+    {
+      role: "Software Engineer",
+      company: "Abstrabit Technologies Pvt Ltd",
+      location: "Bengaluru, Karnataka (Remote)",
+      duration: "Sep 2024 – Present",
+      tech: ["Python", "Django", "ReactJS", "AWS", "Docker"],
+      highlights: [
+        "Designed and implemented a job manager portal that reduced manual tracking errors by 30%.",
+        "Engineered a scalable backend architecture using AWS EC2 and RDS with automated deployment workflows.",
+        "Improved application performance by 40% by identifying and resolving critical bottlenecks.",
+        "Integrated Stripe for secure and seamless payment processing.",
+        "Developed automated and event-triggered email notification systems.",
+        "Implemented Role-Based Access Control (RBAC) to enhance security and personalize user experiences.",
+        "Enhanced audit tool management system for easier auditing and report generation.",
+        "Built REST APIs for a mentoring platform connecting mentors and mentees based on expertise.",
+        "Configured custom domains and deployments using AWS Amplify.",
+        "Integrated OpenAI LLMs for meeting transcription summaries and action items, including Whisper for speech-to-text.",
+      ],
+    },
+
+    {
+      role: "Software Development Engineer Intern",
+      company: "Syscore Solutions Pvt Ltd",
+      location: "Gurugram, Haryana (Hybrid)",
+      duration: "Jul 2024 – Sep 2024",
+      tech: ["Vue.js", "Tailwind CSS", "Docker"],
+      highlights: [
+        "Contributed to the IWBI WELL project by improving platform usability and functionality.",
+        "Integrated Google Maps API for interactive and real-time geospatial visualizations.",
+      ],
+    },
+
+    {
+      role: "Software Development Engineer Intern",
+      company: "Watchguard Technologies Pvt Ltd",
+      location: "Noida (On-site)",
+      duration: "Sep 2023 – Jul 2024",
+      tech: ["Python", "Flask", "FastAPI", "Angular", "AWS"],
+      highlights: [
+        "Developed RESTful microservices using OpenAPI, API Gateway, and AWS Lambda.",
+        "Authored infrastructure-as-code templates for automated AWS deployments.",
+        "Improved test coverage from 72% to ~89% by applying industry best practices.",
+        "Wrote unit tests using Pytest across multiple repositories.",
+        "Contributed to a full-stack internal tool (WG Car Pooling System).",
+      ],
+    },
+  ],
 };

@@ -10,6 +10,7 @@ import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
+import Experience from '@/components/Experience';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -79,6 +80,7 @@ export default function Home() {
 
       <Hero opacity={opacity} scale={scale} setCursorVariant={setCursorVariant} />
       <About />
+      <Experience />
       <Skills />
       <Projects />
       <Contact setCursorVariant={setCursorVariant} />
