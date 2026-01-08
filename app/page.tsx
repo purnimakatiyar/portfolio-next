@@ -87,7 +87,7 @@ export default function Home() {
 
       <footer className="py-8 px-6 border-t border-purple-500/20">
         <div className="max-w-7xl mx-auto text-center text-gray-400">
-          <p>&copy; 2025 Purnima Katiyar. Built with Next.js & Framer Motion</p>
+          <p>&copy; 2026 Purnima Katiyar. Built with Next.js & Framer Motion</p>
         </div>
       </footer>
     </div>
