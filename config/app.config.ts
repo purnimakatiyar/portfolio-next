@@ -104,6 +104,14 @@ export const PROJECTS = {
 
   items: [
     {
+      title: "ResolveAI",
+      description:
+        "Full-stack tickets resolver system with dashboard analytics and automation of drafts creation.",
+      tech: ["Python", "FastAPI", "Supabase", "Next.js", "PostgreSQL", "Gemini"],
+      image: "📱",
+      link: "https://github.com/purnimakatiyar/ResolveAI",
+    },
+    {
       title: "Book My Event",
       description:
         "Full-stack event management system with role based access along with event management features.",
