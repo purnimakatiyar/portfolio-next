@@ -114,7 +114,7 @@ export const PROJECTS = {
     {
       title: "Book My Event",
       description:
-        "Full-stack event management system with role based access along with event management features.",
+        "A fully-fledged, production-style event management platform featuring seamless role-based access control, end-to-end event workflows, dynamic scheduling etc. Designed to deliver a smooth user experience across admin, manager, and customers.",
       tech: ["Python", "Flask", "SQLite", "Angular", "NgPrime"],
       image: "🎟️",
       link: "https://github.com/purnimakatiyar/Bookmyevent-v3",
@@ -122,35 +122,39 @@ export const PROJECTS = {
     {
       title: "ATM System",
       description:
-        "CLI-based ATM simulation supporting core banking operations with clean MVC architecture.",
+        "A high-fidelity command-line ATM simulation that mirrors real banking operations—secure authentication, balance inquiry, withdrawals, deposits, and transaction tracking—built on a clean, modular MVC architecture for maintainability and clarity.",
       tech: ["Python", "SQLite", "MVC"],
       image: "🏦",
       link: "https://github.com/purnimakatiyar/API-ATM",
     },
     {
       title: "Ace Learntech",
-      description: "Online learning platform built with React.",
+      description:
+        "A modern, responsive online learning platform built with React, offering intuitive navigation, modular course content, interactive UI components, and a smooth learner-first experience optimized for performance.",
       tech: ["React", "JavaScript"],
       image: "🎓",
       link: "https://acelearntech.netlify.app/",
     },
     {
       title: "Agrotech Assistant",
-      description: "Agriculture assistant system for farmers.",
+      description:
+        "A smart agriculture support system empowering farmers with crop insights, weather-based recommendations, and resource guidance. Built with Django to ensure reliable data handling, scalability, and fast responses.",
       tech: ["Django", "Bootstrap"],
       image: "🌱",
       link: "https://github.com/purnimakatiyar/AgroTech-Assistant",
     },
     {
       title: "Electronic Gadget Website",
-      description: "Static electronics showcase website.",
+      description:
+        "A visually engaging, fast-loading static website showcasing modern electronic gadgets with clean UI design, smooth layouts, and carefully structured content for maximum user appeal.",
       tech: ["HTML", "CSS"],
       image: "📱",
       link: "https://gallant-payne-e90c2c.netlify.app",
     },
     {
       title: "Realtime Chat App",
-      description: "Realtime chat using sockets.",
+      description:
+        "A lightning-fast realtime chat application powered by WebSockets, delivering instant messaging, dynamic user updates, and efficient message broadcasting through a lightweight Node.js backend.",
       tech: ["Node.js", "Express"],
       image: "💬",
       link: "https://github.com/purnimakatiyar/realtimechat",
